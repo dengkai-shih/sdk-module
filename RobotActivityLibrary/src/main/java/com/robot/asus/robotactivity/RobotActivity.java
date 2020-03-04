@@ -35,6 +35,7 @@ public class RobotActivity extends Activity{
         super.onResume();
         if(robotListenCallback!= null)
             robotAPI.robot.registerListenCallback(robotListenCallback);
+        /* 隱藏下方工具列
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
                                         View.SYSTEM_UI_FLAG_FULLSCREEN |
@@ -42,6 +43,7 @@ public class RobotActivity extends Activity{
                                         View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
                                         View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                                         );
+        */
     }
 
     @Override
